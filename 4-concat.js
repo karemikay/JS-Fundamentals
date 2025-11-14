@@ -1,12 +1,10 @@
-// Get the arguments passed to the script (excluding 'node' and filename)
+// Get the arguments passed to the script (skip node and filename)
 const args = process.argv.slice(2);
 
-// Handle different number of arguments
 if (args[0] === undefined) {
   console.log("No argument");
 } else if (args[1] === undefined) {
-  console.log(args[0]);
+  console.log(args[0] + " is");
 } else {
-  console.log(args[0] + " " + args[1]);
+  console.log(args[0] + " is " + args[1]);
 }
-
